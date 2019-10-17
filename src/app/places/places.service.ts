@@ -5,7 +5,7 @@ import { Place } from './place.model';
   providedIn: 'root'
 })
 export class PlacesService {
-  private places: Place = [
+  private places: Place[] = [
     new Place(
       'p1',
       'Green Hill',
@@ -14,10 +14,17 @@ export class PlacesService {
        340.99
        ),
     new Place(
-      'p1',
-      'Green Hill',
-      'In the heart of sylhet',
-      'https://www.azayabeachresortgoa.com/images/Azaya.jpg',
+      'p2',
+      'Ibis',
+      'Royal place',
+      'https://www.ahstatic.com/photos/3227_ho_00_p_1024x768.jpg',
+      340.99
+    ),
+    new Place(
+      'p3',
+      'Hotel Lorense',
+      'Super natural view',
+      'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
       340.99
     )
   ];
@@ -25,6 +32,8 @@ export class PlacesService {
   get allPlace() {
     return this.places;
   }
-
+  getPlace(id: string) {
+    return { ...this.places.find(p => p.id === id) };
+  }
   constructor() { }
 }
