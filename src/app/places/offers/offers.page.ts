@@ -16,4 +16,7 @@ export class OffersPage implements OnInit {
     console.log(this.loadedOffer);
   }
 
+  onEdit(offerId: string) {
+    console.log('Editing item', offerId);
+  }
 }

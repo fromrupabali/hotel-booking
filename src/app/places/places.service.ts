@@ -17,7 +17,7 @@ export class PlacesService {
       'p2',
       'Ibis',
       'Royal place',
-      'https://www.ahstatic.com/photos/3227_ho_00_p_1024x768.jpg',
+      'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
       340.99
     ),
     new Place(
